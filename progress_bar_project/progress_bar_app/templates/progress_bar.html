@@ -1,0 +1,36 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Progress Tracker</h1>
+        {% for textbook in textbooks %}
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>{{ textbook.name }}</h3>
+                </div>
+                <div class="card-body">
+                    {% for lesson in textbook.lesson_set.all %}
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input lesson-checkbox" id="lesson{{ lesson.id }}" 
+                                data-lesson-id="{{ lesson.id }}" {% if lesson.completed %}checked{% endif %}>
+                            <label class="form-check-label" for="lesson{{ lesson.id }}">{{ lesson.name }}</label>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Include JavaScript file -->
+    <script src="{% static 'progress_bar.js' %}"></script>
+</body>
+</html>
