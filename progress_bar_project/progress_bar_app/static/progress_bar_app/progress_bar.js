@@ -1,22 +1,27 @@
-// progress_tracker.js
+document.addEventListener("DOMContentLoaded", function() {
+    $(".lesson").click(function() {
+        const lessonId = $(this).data("lesson-id");
+        const completed = $(this).hasClass("completed");
+        
+        // Toggle completed status
+        $(this).toggleClass("completed");
 
-$(document).ready(function() {
-    $('.lesson-checkbox').on('change', function() {
-        var lessonId = $(this).data('lessonId');
-        var completed = $(this).prop('checked');
-
-        $.ajax({
-            url: `/update_lesson_status/${lessonId}`,
-            method: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify({ completed: completed }),
-            success: function(response) {
-                console.log('Lesson status updated successfully');
-                // Optionally, update UI based on response
+        // Send an HTTP request to update the completion status
+        fetch(`/update_lesson_status/${lessonId}`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
             },
-            error: function(xhr, status, error) {
-                console.error('Failed to update lesson status:', error);
+            body: JSON.stringify({ completed: !completed }) // Send opposite value
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to update lesson status");
             }
+            // Optionally, update UI based on response
+        })
+        .catch(error => {
+            console.error("Error:", error);
         });
     });
 });
