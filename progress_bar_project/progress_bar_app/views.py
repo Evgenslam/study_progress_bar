@@ -9,7 +9,7 @@ def progress_bar(request):
 
 
 def update_lesson_status(request):
-    if request.method == 'POST' and request.is_ajax():
+    if request.method == 'POST' and request.headers.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest':
         lesson_id = request.POST.get('lesson_id')
         completed = request.POST.get('completed') == 'true'  # Convert string to boolean
 
