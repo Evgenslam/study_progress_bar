@@ -1,27 +1,64 @@
-document.addEventListener("DOMContentLoaded", function() {
-    $(".lesson").click(function() {
-        const lessonId = $(this).data("lesson-id");
-        const completed = $(this).hasClass("completed");
-        
-        // Toggle completed status
-        $(this).toggleClass("completed");
+document.addEventListener('DOMContentLoaded', function() {
+    const lessonSections = document.querySelectorAll('.lesson-section');
 
-        // Send an HTTP request to update the completion status
-        fetch(`/update_lesson_status/${lessonId}`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ completed: !completed }) // Send opposite value
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Failed to update lesson status");
+    lessonSections.forEach(section => {
+        section.addEventListener('click', function() {
+            const lessonId = this.getAttribute('data-lesson-id');
+            const isCompleted = this.classList.contains('completed');
+
+            // Toggle completion status and color
+            if (isCompleted) {
+                this.classList.remove('completed');
+                updateLessonStatus(lessonId, false);
+            } else {
+                this.classList.add('completed');
+                updateLessonStatus(lessonId, true);
             }
-            // Optionally, update UI based on response
-        })
-        .catch(error => {
-            console.error("Error:", error);
         });
     });
+
+    function updateLessonStatus(lessonId, completed) {
+        // Send AJAX request to update lesson status
+        const url = '/update_lesson_status/';
+        const data = {
+            lesson_id: lessonId,
+            completed: completed
+        };
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')  // Ensure CSRF token is included
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                console.log('Lesson status updated successfully');
+            } else {
+                console.error('Failed to update lesson status:', data.error);
+            }
+        })
+        .catch(error => {
+            console.error('An error occurred while updating lesson status:', error);
+        });
+    }
+
+    // Function to get CSRF token from cookie
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
 });

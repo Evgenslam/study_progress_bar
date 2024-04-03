@@ -9,16 +9,16 @@ def progress_bar(request):
 
 
 def update_lesson_status(request):
-    if request.method == 'POST':
+    if request.method == 'POST' and request.is_ajax():
         lesson_id = request.POST.get('lesson_id')
-        completed = request.POST.get('completed')
+        completed = request.POST.get('completed') == 'true'  # Convert string to boolean
 
-        try:
-            lesson = Lesson.objects.get(pk=lesson_id)
-            lesson.completed = completed
-            lesson.save()
-            return JsonResponse({'success': True})
-        except Lesson.DoesNotExist:
-            return JsonResponse({'success': False, 'error': 'Lesson does not exist'})
+        # Update lesson status in the database
+        lesson = Lesson.objects.get(id=lesson_id)
+        lesson.completed = completed
+        lesson.save()
+
+        return JsonResponse({'success': True})
     else:
-        return JsonResponse({'success': False, 'error': 'Only POST requests are allowed'})
+        return JsonResponse({'success': False, 'error': 'Invalid request'})
+
