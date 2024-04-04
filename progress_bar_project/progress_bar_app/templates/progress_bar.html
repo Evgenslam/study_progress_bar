@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .lesson-section {
-            width: 100px;
-            height: 50px;
+            width: 150px; /* Increase width to fit longer lesson names */
+            height: 70px; /* Increase height for better visibility */
             border: 1px solid black;
             display: inline-block;
             margin: 5px;
             cursor: pointer;
+            overflow: hidden; /* Hide overflowing text */
+            text-align: center; /* Center text horizontally */
+            line-height: 70px; /* Vertically center text */
+            font-size: 12px; /* Decrease font size to fit */
         }
     </style>
 </head>
