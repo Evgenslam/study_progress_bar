@@ -122,7 +122,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'project_bar_app/static')
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
