@@ -1,6 +1,7 @@
 import csv
 import fitz  # PyMuPDF
 
+
 def extract_bookmarks(pdf_path, csv_path, textbook):
     bookmarks = []
     # Open the PDF file
