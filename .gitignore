@@ -162,3 +162,5 @@ cython_debug/
 
 #VScode
 .vscode/
+
+progress_bar_project/textbooks_pdfs/
