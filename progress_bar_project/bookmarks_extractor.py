@@ -1,6 +1,8 @@
 import csv
 import fitz  # PyMuPDF
 
+from variables import textbooks_data
+
 
 def extract_bookmarks(pdf_path, csv_path, textbook):
     bookmarks = []
@@ -21,7 +23,5 @@ def extract_bookmarks(pdf_path, csv_path, textbook):
         writer.writerows(bookmarks)
 
 
-# Example usage:
-extract_bookmarks("C:\\Users\\evgen\\Dropbox\\Genki - An Integrated Course in Elementary Japanese [Second Edition] - 2011\\Genki - An Integrated Course in Elementary Japanese I [Second Edition] (2011), WITH PDF BOOKMARKS!.pdf", 
-                  "progress_bar_project\\genki_workboolessons.csv",
-                  "Genki_main")
+for t in textbooks_data:
+    extract_bookmarks(t["pdf_path"], t["csv_path"], t["textbook"])
