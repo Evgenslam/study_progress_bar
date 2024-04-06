@@ -23,5 +23,5 @@ def extract_bookmarks(pdf_path, csv_path, textbook):
 
 # Example usage:
 extract_bookmarks("C:\\Users\\evgen\\Dropbox\\Genki - An Integrated Course in Elementary Japanese [Second Edition] - 2011\\Genki - An Integrated Course in Elementary Japanese I [Second Edition] (2011), WITH PDF BOOKMARKS!.pdf", 
-                  "progress_bar_project\\lessons.csv",
+                  "progress_bar_project\\genki_workboolessons.csv",
                   "Genki_main")
