@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions', 
-    'progress_bar_app.apps.ProgressBarAppConfig'
+    'progress_bar_app.apps.ProgressBarAppConfig',
     'users.apps.UsersConfig'
 ]
 

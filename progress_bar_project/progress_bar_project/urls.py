@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import include, path
-from progress_bar_app.views import progress_bar, update_lesson_status
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
