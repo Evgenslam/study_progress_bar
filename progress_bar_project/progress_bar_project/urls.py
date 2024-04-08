@@ -4,7 +4,6 @@ from progress_bar_app.views import progress_bar, update_lesson_status
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', progress_bar, name='progress_bar'),
-    path('update_lesson_status/', update_lesson_status, name='update_lesson_status'),
+    path('bar/', include('progress_bar_app.urls', namespace='bar')),
     path('users/', include('users.urls', namespace='users'))
 ]
