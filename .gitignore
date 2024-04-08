@@ -164,3 +164,5 @@ cython_debug/
 .vscode/
 
 progress_bar_project/textbooks_pdfs/
+
+progress_bar_project/progress_bar_app/migrations/
