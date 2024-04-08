@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions', 
     'progress_bar_app.apps.ProgressBarAppConfig'
+    'users.apps.UsersConfig'
 ]
 
 MIDDLEWARE = [
