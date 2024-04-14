@@ -1,10 +1,4 @@
 Textbook,Name
-genki_textbook_I,Cover
-genki_textbook_I,Preface
-genki_textbook_I,Table of Contents
-genki_textbook_I,Introduction
-genki_textbook_I,Japanese Writing System
-genki_textbook_I,Conversation and Grammar Section
 genki_textbook_I,Greetings
 genki_textbook_I,Lesson 1: New Friends
 genki_textbook_I,Lesson 2: Shopping
@@ -18,7 +12,6 @@ genki_textbook_I,Lesson 9: Kabuki
 genki_textbook_I,Lesson 10: Winter Vacation Plans
 genki_textbook_I,Lesson 11: AFter the Vacation
 genki_textbook_I,Lesson 12: Feeling Ill
-genki_textbook_I,Reading and Writing Section
 genki_textbook_I,Lesson 1: Hiragana
 genki_textbook_I,Lesson 2: Katakana
 genki_textbook_I,Lesson 3: Daily Life
@@ -31,9 +24,4 @@ genki_textbook_I,Lesson 9: Sue's Diary
 genki_textbook_I,Lesson 10: The Folktale Kasajizo
 genki_textbook_I,Lesson 11: Looking for Friends
 genki_textbook_I,Lesson 12: Tanabata Festival
-genki_textbook_I,Appendix
-genki_textbook_I,Dictionary: Japanese-English
-genki_textbook_I,Dictionary: English-Japanese
-genki_textbook_I,Map of Japan
-genki_textbook_I,Numbers
-genki_textbook_I,Conjugation Chart
+
