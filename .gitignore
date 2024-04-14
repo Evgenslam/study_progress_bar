@@ -60,6 +60,7 @@ cover/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+*.sqlite3
 
 # Flask stuff:
 instance/
@@ -164,5 +165,3 @@ cython_debug/
 .vscode/
 
 progress_bar_project/textbooks_pdfs/
-
-progress_bar_project/progress_bar_app/migrations/
