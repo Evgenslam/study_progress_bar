@@ -5,6 +5,7 @@ from .models import Textbook, Lesson
 
 def progress_bar(request):
     textbooks = Textbook.objects.all()
+    data = {}
     return render(request, 'progress_bar.html', {'textbooks': textbooks})
 
 
