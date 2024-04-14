@@ -1,158 +1,123 @@
 Textbook,Name
-genki_workbook_I,Greetings
-genki_workbook_I,Lesson 1
-genki_workbook_I,Numbers
-genki_workbook_I,Time and telephone numbers
-genki_workbook_I,"NounのNoun, XはYです
-"
-genki_workbook_I,Question sentences
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 2
-genki_workbook_I,Numbers-2
-genki_workbook_I,"これ、それ、あれ
-"
-genki_workbook_I,"この、その、あの
-"
-genki_workbook_I,"ここ、そこ、あそこ・だれの
-"
-genki_workbook_I,Noun　も　・　Noun　じゃないです
-genki_workbook_I,Listening comprehension
-genki_workbook_I,Questions practice
-genki_workbook_I,Lesson 3
-genki_workbook_I,Verb conjugation
+genki_workbook_I,"Greetings"
+genki_workbook_I,"Lesson 1"
+genki_workbook_I,"Numbers"
+genki_workbook_I,"Time and telephone numbers"
+genki_workbook_I,"NounのNoun, XはYです"
+genki_workbook_I,"Question sentences"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 2"
+genki_workbook_I,"Numbers-2"
+genki_workbook_I,"これ、それ、あれ"
+genki_workbook_I,"この、その、あの"
+genki_workbook_I,"ここ、そこ、あそこ・だれの"
+genki_workbook_I,"Noun　も　・　Noun　じゃないです"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 3"
+genki_workbook_I,"Verb conjugation"
 genki_workbook_I,Noun　を　Verb
-genki_workbook_I,Verbs with places
-genki_workbook_I,Time references
-genki_workbook_I,Suggestion using ～ませんか？
-genki_workbook_I,Frequency Adverbs
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 4
-genki_workbook_I,"Xがあります・います
-"
-genki_workbook_I,Describing where things are
-genki_workbook_I,Past tense (Nouns)
-genki_workbook_I,Past tense (Verbs conjugation)
-genki_workbook_I,Past tense (Verbs)
-genki_workbook_I,も
-genki_workbook_I,～時間・Particles
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 5
-genki_workbook_I,Adjective conjugation (Present tense)
-genki_workbook_I,Adjectives (Present tense)
-genki_workbook_I,Adjective conjugation (Present and past tense)
-genki_workbook_I,Adjectives (Past tense)
-genki_workbook_I,Adjective + Noun
-genki_workbook_I,好きな・きらいな
-genki_workbook_I,～ましょう
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 6
-genki_workbook_I,Te-form - 1
-genki_workbook_I,Te-form - 2
-genki_workbook_I,～てください
-genki_workbook_I,～てもいいです
-genki_workbook_I,～てはいけません
-genki_workbook_I,Describing 2 activities
-genki_workbook_I,～から
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 7
-genki_workbook_I,Te-form-3
-genki_workbook_I,～ている（Actions in progress）
-genki_workbook_I,～ている（Result of a change）
-genki_workbook_I,Describing people
-genki_workbook_I,Te-form for joining sentences
-genki_workbook_I,Verb stem + に行く・来る・帰る
-genki_workbook_I,Counting people
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 8
-genki_workbook_I,Short forms (Present tense)
-genki_workbook_I,Short forms (Informal)
-genki_workbook_I,～と思います
-genki_workbook_I,～と言っていました
-genki_workbook_I,～ないでください
-genki_workbook_I,Verbのが好きです
-genki_workbook_I,が・何か・何も
+genki_workbook_I,"Verbs with places"
+genki_workbook_I,"Time references"
+genki_workbook_I,"Suggestion using ～ませんか？"
+genki_workbook_I,"Frequency Adverbs"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 4"
+genki_workbook_I,"Xがあります・います"
+genki_workbook_I,"Describing where things are"
+genki_workbook_I,"Past tense (Nouns)"
+genki_workbook_I,"Past tense (Verbs conjugation)"
+genki_workbook_I,"Past tense (Verbs)"
+genki_workbook_I,"も"
+genki_workbook_I,"～時間・Particles"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 5"
+genki_workbook_I,"Adjective conjugation (Present tense)"
+genki_workbook_I,"Adjectives (Present tense)"
+genki_workbook_I,"Adjective conjugation (Present and past tense)"
+genki_workbook_I," (Past tense)"
+genki_workbook_I,"Adjective + Noun"
+genki_workbook_I,"好きな・きらいな"
+genki_workbook_I,"～ましょう"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 6"
+genki_workbook_I,"Te-form - 1"
+genki_workbook_I,"-form - 2"
+genki_workbook_I,"～てください"
+genki_workbook_I,"～てもいいです"
+genki_workbook_I,"～てはいけません"
+genki_workbook_I,"Describing 2 activities"
+genki_workbook_I,"～から"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 7"
+genki_workbook_I,"Te-form-3"
+genki_workbook_I,"～ている（Actions in progress）"
+genki_workbook_I,"～ている（Result of a change）"
+genki_workbook_I,"Describing people"
+genki_workbook_I,"Te-form for joining sentences"
+genki_workbook_I,"Verb stem + に行く・来る・帰る"
+genki_workbook_I,"Counting people"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 8"
+genki_workbook_I,"Short forms (Present tense)"
+genki_workbook_I,"Short forms (Informal)"
+genki_workbook_I,"～と思います"
+genki_workbook_I,"～と言っていました"
+genki_workbook_I,"～ないでください"
+genki_workbook_I,"Verbのが好きです"
+genki_workbook_I,"が・何か・何も"
 genki_workbook_I,Listening comprehension
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 9
-genki_workbook_I,Short forms (Past tense)
-genki_workbook_I,Short forms (Past tense informal)
-genki_workbook_I,Short forms (Past tense　～と思います)
-genki_workbook_I,～と言っていました
-genki_workbook_I,Verb + Noun
-genki_workbook_I,また～ていません
-genki_workbook_I,～から
-genki_workbook_I,Listening comprehension
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 10
-genki_workbook_I,Comparison between 2
-genki_workbook_I,Comparison between 3+
-genki_workbook_I,Adjective/Noune + の
-genki_workbook_I,～つもり
-genki_workbook_I,Adjective + なる
-genki_workbook_I,～で行きます・かかります・どこかに・どこにも
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 11
-genki_workbook_I,～たい
-genki_workbook_I,～たり～たりする
-genki_workbook_I,～ことがある
-genki_workbook_I,Noun A　 や　Noun B
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 12
-genki_workbook_I,～んです
-genki_workbook_I,～すぎる
-genki_workbook_I,～ほうがいいです
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 9"
+genki_workbook_I,"Short forms (Past tense)"
+genki_workbook_I,"Short forms (Past tense informal)"
+genki_workbook_I,"Short forms (Past tense　～と思います)"
+genki_workbook_I,"～と言っていました"
+genki_workbook_I,"Verb + Noun"
+genki_workbook_I,"また～ていません"
+genki_workbook_I,"～から"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 10"
+genki_workbook_I,"Comparison between 2"
+genki_workbook_I,"Comparison between 3+"
+genki_workbook_I,"Adjective/Noune + の"
+genki_workbook_I,"～つもり"
+genki_workbook_I,"Adjective + なる"
+genki_workbook_I,"～で行きます・かかります・どこかに・どこにも"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 11"
+genki_workbook_I,"～たい"
+genki_workbook_I,"～たり～たりする"
+genki_workbook_I,"～ことがある"
+genki_workbook_I,"Noun A　 や　Noun B"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 12"
+genki_workbook_I,"～んです"
+genki_workbook_I,"～すぎる"
+genki_workbook_I,"～ほうがいいです"
 genki_workbook_I,～ので
 genki_workbook_I,～なければなりません
 genki_workbook_I,～でしょう
-genki_workbook_I,"Listening comprehension
-"
-genki_workbook_I,"Questions practice
-"
-genki_workbook_I,Lesson 1　ひらがな
-genki_workbook_I,Lesson 2　カタカナ
-genki_workbook_I,"Lesson 3　一二三四五六七八九十百千万円時
-"
-genki_workbook_I,"Lesson 4　日本人月火水木金土曜上下中半
-"
-genki_workbook_I,"Lesson 5　山川元気天私今田女男見行食飲
-"
-genki_workbook_I,"Lesson 6　東西南北口出右左分先生大学外国
-"
-genki_workbook_I,"Lesson 7　京子小会社父母高校每語文帰入
-"
-genki_workbook_I,"Lesson 8　員新聞作仕事電車休言読思次何
-"
-genki_workbook_I,"Lesson 9　午後前名白雨書友間家話少古知来
-"
-genki_workbook_I,"Lesson 10　住正年売買町長道雪立自夜朝持
-"
-genki_workbook_I,"Lesson 11　手紙好近明病院映画歌市所勉強有旅
-"
-genki_workbook_I,"Lesson 12　昔々神早起牛使働連別度赤青色
-"
+genki_workbook_I,"Listening comprehension"
+genki_workbook_I,"Questions practice"
+genki_workbook_I,"Lesson 1　ひらがな"
+genki_workbook_I,"Lesson 2　カタカナ"
+genki_workbook_I,"Lesson 3　一二三四五六七八九十百千万円時"
+genki_workbook_I,"Lesson 4　日本人月火水木金土曜上下中半"
+genki_workbook_I,"Lesson 5　山川元気天私今田女男見行食飲"
+genki_workbook_I,"Lesson 6　東西南北口出右左分先生大学外国"
+genki_workbook_I,"Lesson 7　京子小会社父母高校每語文帰入"
+genki_workbook_I,"Lesson 8　員新聞作仕事電車休言読思次何"
+genki_workbook_I,"Lesson 9　午後前名白雨書友間家話少古知来"
+genki_workbook_I,"Lesson 10　住正年売買町長道雪立自夜朝持"
+genki_workbook_I,"Lesson 11　手紙好近明病院映画歌市所勉強有旅"
+genki_workbook_I,"Lesson 12　昔々神早起牛使働連別度赤青色"
