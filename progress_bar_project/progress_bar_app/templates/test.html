@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .lesson-section {
+            width: 150px; /* Increase width to fit longer lesson names */
+            height: 70px; /* Increase height for better visibility */
+            border: 1px solid black;
+            display: inline-block;
+            margin: 5px;
+            cursor: pointer;
+            overflow: auto; /* Hide overflowing text */
+            word-wrap: break-word; /* Allow text to wrap within the box */
+            text-align: center; /* Center text horizontally */
+            line-height: 20px; /* Vertically center text */
+            font-size: 12px; /* Decrease font size to fit */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Прогресс {{ user_name }}</h1>
+        {% for user_textbook in user_textbooks %}  <!-- Changed variable name -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>{{ user_textbook.textbook }}</h3>  <!-- Access textbook attribute -->
+                </div>
+                <div class="card-body">
+                    {% for user_lesson in user_lessons %}  <!-- Changed variable name -->
+                        {% if user_lesson.textbook == user_textbook.textbook %}
+                            <div>
+                                {{ user_lesson.lesson }}  <!-- Access lesson attribute -->
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Include JavaScript file -->
+</body>
+</html>

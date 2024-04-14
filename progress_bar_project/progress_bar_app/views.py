@@ -1,15 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import JsonResponse
-from .models import Textbook, Lesson
+from .models import Textbook, Lesson, UserTextbook, UserLesson, CustomUser
 
 
-def progress_bar(request):
-    textbooks = Textbook.objects.all()
-    data = {}
-    return render(request, 'progress_bar.html', {'textbooks': textbooks})
+def progress_bar(request, user_slug):
+    user_id = CustomUser.objects.get(slug=user_slug).id
+    user_name = CustomUser.objects.get(slug=user_slug).name
+    user_textbooks = UserTextbook.objects.filter(user_id=user_id)
+    user_lessons = UserLesson.objects.filter(user_id=user_id)
+    data = {
+        'title': f'Прогресс: {user_name}',
+        'user_name': user_name,
+        'user_textbooks': user_textbooks,
+        'user_lessons': user_lessons,
+    }
+    return render(request, 'test.html', context=data)
 
 
-def sync_completion_status(request):
+def sync_completion_status(request, user_slug):
     if request.method == 'POST' and request.is_ajax():
         completed_lessons = request.POST.getlist('completed_lessons[]')
         # Update completion status in the database
@@ -17,4 +25,5 @@ def sync_completion_status(request):
         return JsonResponse({'success': True})
     else:
         return JsonResponse({'success': False, 'error': 'Invalid request'})
+
 
