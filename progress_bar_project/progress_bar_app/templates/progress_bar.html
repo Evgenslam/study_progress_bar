@@ -26,18 +26,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>Progress Tracker</h1>
-        {% for textbook in textbooks %}
+        <h1>Прогресс {{ user_name }}</h1>
+        {% for user_textbook in user_textbooks %}
             <div class="card mb-4">
                 <div class="card-header">
-                    <h3>{{ textbook.name }}</h3>
+                    <h3>{{ user_textbook.textbook }}</h3>
                 </div>
                 <div class="card-body">
-                    {% for lesson in textbook.lesson_set.all %}
-                        <div class="lesson-section {% if lesson.completed %}completed{% endif %}" 
-                             data-lesson-id="{{ lesson.id }}">
-                            {{ lesson.name }}
-                        </div>
+                    {% for user_lesson in user_lessons %}
+                        {% if user_lesson.lesson.textbook == user_textbook.textbook %}
+                            <div class="lesson-section {% if user_lesson.completed %}completed{% endif %}" 
+                                data-lesson-id="{{ user_lesson.id }}">
+                                {{ user_lesson.lesson.name }}
+                            </div>
+                        {% endif %}
                     {% endfor %}
                 </div>
             </div>

@@ -52,5 +52,5 @@ class UserLesson(models.Model):
     completed = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"{self.lesson.name} for {self.user.name}"
+        return f"{self.lesson} for {self.user}"
 

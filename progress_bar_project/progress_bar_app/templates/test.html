@@ -31,9 +31,9 @@
                 </div>
                 <div class="card-body">
                     {% for user_lesson in user_lessons %}  <!-- Changed variable name -->
-                        {% if user_lesson.textbook == user_textbook.textbook %}
+                        {% if user_lesson.lesson.textbook == user_textbook.textbook %}
                             <div>
-                                {{ user_lesson.lesson }}  <!-- Access lesson attribute -->
+                                <h4>{{ user_lesson.lesson.name }}</h4>  <!-- Access lesson attribute -->
                             </div>
                         {% endif %}
                     {% endfor %}
