@@ -21,4 +21,12 @@ To get started with the Progress Bar project:
 - View Progress Bars: Log in to view progress bars representing textbooks and their associated lessons.
 - Track Progress: Mark sections as completed or incomplete and log additional details for each lesson.
 
+
+## Starting locally
+- git clone
+- python -m venv venv
+- pip install -r requirements.txt
+- fill lesson_data folder with csv files, each file representing textbook and containing names of lessons. Use bookmarks_extractor if neccessary
+- populate db by running in order: populate_users (make sure to have correct list of students in the same file), import_lessons, cross_poopulate
+
 Feedback and contributions to the Progress Bar project are welcome. Please feel free to submit any suggestions or bug reports. 
