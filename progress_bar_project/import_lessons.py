@@ -25,8 +25,12 @@ def get_lesson(csv_file):
                 continue
             Lesson.objects.create(textbook=textbook, name=row[1])
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
-root, _, files = next(os.walk('lesson_data/'))
+print(script_dir)
+
+root, _, files = next(os.walk('./lesson_data'))
+print(files)
 textbooks = [file.rstrip('.csv') for file in files]
 filepaths = [os.path.join(root, file) for file in files]
 print(filepaths)
