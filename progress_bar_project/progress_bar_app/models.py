@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 class CustomUser(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=255, unique=False, db_index=True)
     time_create = models.DateTimeField(auto_now_add=True)
     time_update = models.DateTimeField(auto_now=True)
