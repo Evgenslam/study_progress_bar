@@ -1,11 +1,17 @@
 import csv
 import os
+import sys
+
 import django
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'progress_bar_project.settings')
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "progress_bar_project.settings")
 django.setup()
 
-from progress_bar_app.models import Lesson, Textbook
+from core.models.progress_bar import Lesson, Textbook
+
+from progress_bar_project.settings import BASE_DIR
 
 
 def get_textbook(textbook):
@@ -13,7 +19,7 @@ def get_textbook(textbook):
 
 
 def get_lesson(csv_file):
-    with open(csv_file, 'r', encoding="utf-8") as f:
+    with open(csv_file, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
         next(reader)
         for row in reader:
@@ -26,8 +32,12 @@ def get_lesson(csv_file):
             Lesson.objects.create(textbook=textbook, name=row[1])
 
 
-root, _, files = next(os.walk('./lesson_data'))
-textbooks = [file.rstrip('.csv') for file in files]
+if not os.path.exists("../lesson_data"):
+    print("Directory '../lesson_data' does not exist.")
+
+root, _, files = next(os.walk(os.path.join(BASE_DIR, "lesson_data")))
+textbooks = [file.rstrip(".csv") for file in files]
+print(textbooks)
 filepaths = [os.path.join(root, file) for file in files]
 
 for t in textbooks:

@@ -1,7 +1,8 @@
+from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login, logout
 from django.urls import reverse
+
 from users.forms import LoginUserForm
 
 
